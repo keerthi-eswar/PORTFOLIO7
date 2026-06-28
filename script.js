@@ -355,6 +355,28 @@ cards.forEach(card=>{
 
 });
 
+/* ===============================
+   ELASTIC ID CARD ANIMATION
+================================== */
+
+const idCard = document.querySelector(".id-card");
+
+if (idCard) {
+
+    idCard.addEventListener("click", () => {
+
+        // Remove previous animation
+        idCard.classList.remove("elastic");
+
+        // Force reflow so animation can replay
+        void idCard.offsetWidth;
+
+        // Add animation class
+        idCard.classList.add("elastic");
+
+    });
+
+}
 
 /*========================
 END
