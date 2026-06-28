@@ -378,6 +378,18 @@ if (idCard) {
 
 }
 
+const card = document.getElementById("idCard");
+
+card.addEventListener("click", () => {
+
+    card.classList.remove("elastic");
+
+    void card.offsetWidth;
+
+    card.classList.add("elastic");
+
+});
+
 /*========================
 END
 =========================*/
